@@ -58,7 +58,8 @@ class AutorController(val repository: AutorRepository) {
             return HttpResponse.notFound()
         }
 
-        repository.delete(possivelAutor.get())
+        //repository.delete(possivelAutor.get())
+        repository.deleteById(id)
         return  HttpResponse.ok()
     }
 }
