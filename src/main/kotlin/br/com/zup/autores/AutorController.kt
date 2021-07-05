@@ -36,7 +36,7 @@ class AutorController(val repository: AutorRepository) {
     }
 
     @Put("/{id}")
-    fun atualizaAutor(@PathVariable id: Long, @Body descricao: String): HttpResponse<Any>{
+    fun atualizaAutor(@PathVariable id: Long, descricao: String): HttpResponse<Any>{
         val possivelAutor = repository.findById(id)
 
         if (possivelAutor.isEmpty){
