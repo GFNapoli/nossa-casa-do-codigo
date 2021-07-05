@@ -1,12 +1,19 @@
 package br.com.zup.autores
 
 import java.time.LocalDateTime
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
 
+@Entity
 class Autor(
     val nome: String,
     val email: String,
-    val descricao: String
+    var descricao: String
 ) {
-    val id: Long? = null
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    var id: Long? = null
     val dataCadastro: LocalDateTime = LocalDateTime.now()
 }
