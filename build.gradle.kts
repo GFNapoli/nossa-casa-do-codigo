@@ -41,7 +41,7 @@ dependencies {
     testImplementation("org.testcontainers:postgresql")
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
-
+    implementation("io.micronaut.xml:micronaut-jackson-xml")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 }
