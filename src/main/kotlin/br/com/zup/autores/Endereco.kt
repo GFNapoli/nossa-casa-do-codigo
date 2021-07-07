@@ -6,7 +6,7 @@ import javax.persistence.*
 class Endereco(
     val cep: String,
     val numero: String,
-    val rua: String,
+    val logradouro: String,
     val cidade: String,
     val estado: String
 ){

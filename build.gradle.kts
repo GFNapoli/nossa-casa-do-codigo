@@ -40,10 +40,11 @@ dependencies {
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:postgresql")
     testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.mockito:mockito-core")
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.xml:micronaut-jackson-xml")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-
+    runtimeOnly("com.h2database:h2")
 }
 
 
