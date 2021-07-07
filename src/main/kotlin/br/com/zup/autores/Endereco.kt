@@ -1,14 +1,16 @@
 package br.com.zup.autores
 
-import javax.persistence.Embeddable
+import javax.persistence.*
 
-@Embeddable
+@Entity
 class Endereco(
-    enderecoResponse: EnderecoResponse,
     val cep: String,
-    val numero: String
+    val numero: String,
+    val rua: String,
+    val cidade: String,
+    val estado: String
 ){
-    val rua = enderecoResponse.rua
-    val cidade = enderecoResponse.cidade
-    val estado = enderecoResponse.estado
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    val id: Long? = null
 }

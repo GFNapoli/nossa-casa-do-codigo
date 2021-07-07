@@ -2,12 +2,9 @@ package br.com.zup.autores
 
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.annotation.*
-import io.micronaut.http.exceptions.HttpException
 import io.micronaut.http.uri.UriBuilder
 import io.micronaut.validation.Validated
-import io.netty.handler.codec.http.HttpExpectationFailedEvent
 import javax.transaction.Transactional
-
 import javax.validation.Valid
 
 @Validated

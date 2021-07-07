@@ -1,4 +1,4 @@
-package br.com.zup.Carros
+package br.com.zup.carrosAnotation
 
 import io.micronaut.core.annotation.Introspected
 import javax.validation.constraints.NotBlank
